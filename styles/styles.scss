@@ -1,0 +1,99 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+// Color Pallete
+
+$color-primary: #3f406c;
+$color-light: #52557e;
+$color-accent: #5a5f89;
+$color-pop: #a68dd7;
+$color-grey: #5a5f89;
+$color-grey-light: #8d91b5;
+
+// Removing default styles
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Reused selectors
+
+.container {
+  margin: 0 50px;
+}
+
+.three-dots {
+  padding: 2px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .dot-1 {
+    font-size: 8px;
+  }
+  .dot-2 {
+    font-size: 6px;
+  }
+  .dot-3 {
+    font-size: 3px;
+  }
+}
+
+// Navbar
+
+nav {
+  background-color: $color-light;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  .nav-right-thing {
+    padding: 0 0;
+    height: 100%;
+    input {
+      background-color: $color-accent;
+      color: $color-grey-light;
+      padding: 12px 60px 12px 8px;
+      outline: none;
+      border: none;
+    }
+    input::placeholder {
+      color: $color-grey-light;
+    }
+    a {
+      padding: 10px 8px;
+      float: right;
+      height: 100%;
+      color: white;
+      text-decoration: none;
+      background-color: $color-pop;
+    }
+  }
+}
+
+// Main section
+
+main {
+  background-color: $color-primary;
+  .container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+  }
+  .box-header {
+  }
+  .box-body {
+    background-color: $color-grey;
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    color: $color-grey-light;
+  }
+}

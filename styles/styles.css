@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 0 50px;
+}
+
+.three-dots {
+  padding: 2px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.three-dots .dot-1 {
+  font-size: 8px;
+}
+
+.three-dots .dot-2 {
+  font-size: 6px;
+}
+
+.three-dots .dot-3 {
+  font-size: 3px;
+}
+
+nav {
+  background-color: #52557e;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav .nav-right-thing {
+  padding: 0 0;
+  height: 100%;
+}
+
+nav .nav-right-thing input {
+  background-color: #5a5f89;
+  color: #8d91b5;
+  padding: 12px 60px 12px 8px;
+  outline: none;
+  border: none;
+}
+
+nav .nav-right-thing input::-webkit-input-placeholder {
+  color: #8d91b5;
+}
+
+nav .nav-right-thing input:-ms-input-placeholder {
+  color: #8d91b5;
+}
+
+nav .nav-right-thing input::-ms-input-placeholder {
+  color: #8d91b5;
+}
+
+nav .nav-right-thing input::placeholder {
+  color: #8d91b5;
+}
+
+nav .nav-right-thing a {
+  padding: 10px 8px;
+  float: right;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  background-color: #a68dd7;
+}
+
+main {
+  background-color: #3f406c;
+}
+
+main .container {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 2fr 2fr;
+      grid-template-rows: 2fr 2fr;
+}
+
+main .box-body {
+  background-color: #5a5f89;
+  color: white;
+}
+
+main a {
+  text-decoration: none;
+  color: #8d91b5;
+}
+/*# sourceMappingURL=styles.css.map */
