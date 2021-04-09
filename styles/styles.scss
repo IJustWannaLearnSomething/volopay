@@ -96,6 +96,11 @@ nav {
   justify-content: space-between;
   font-family: 'Roboto', sans-serif;
   box-shadow: $shadow-subtle, $shadow-subtle;
+  .menu-btn {
+    background-color: $color-light;
+    padding: 10px 8px;
+    display: none;
+  }
   .nav-right-thing {
     padding: 0 0;
     height: 100%;
@@ -184,8 +189,6 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    img {
-    }
   }
   .box {
     box-shadow: $shadow-subtle;
@@ -372,6 +375,29 @@ main {
 }
 
 @media screen and (max-width: 425px) {
+  nav {
+    padding-left: 10px;
+    .nav-right-thing {
+      input {
+        position: relative;
+        left: 10px;
+        width: 80%;
+        background-color: $color-accent;
+        color: $color-grey-light;
+        padding: 12px 12px 12px 8px;
+      }
+      .btn {
+        padding: 10px 5px;
+        float: right;
+      }
+    }
+    .nav-right-thing {
+      display: none;
+    }
+    .menu-btn {
+      display: flex;
+    }
+  }
   main {
     .container {
       grid-template-columns: 4fr;
