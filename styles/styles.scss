@@ -27,6 +27,10 @@ $font-big: 30px;
 $font-huge: 50px;
 
 $shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+$transition-subtle: all 0.3s ease;
+$transition-slow: all 0.8s ease-out;
+
 // Removing default styles
 
 *,
@@ -35,6 +39,28 @@ $shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* scrollbar width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* scrollbar Track */
+::-webkit-scrollbar-track {
+  background: $color-primary;
+  border-radius: 6px;
+}
+
+/* scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: $color-grey-light;
+  border-radius: 6px;
+}
+
+/* scrollbar Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $color-pop;
 }
 
 // Reused selectors
@@ -121,6 +147,10 @@ nav {
       color: $color-white;
       text-decoration: none;
       background-color: $color-pop;
+      transition: $transition-subtle;
+    }
+    .btn:hover {
+      transform: scale(1.02);
     }
   }
 }
@@ -164,7 +194,8 @@ main {
     }
     p {
       padding-bottom: $gap-med;
-      overflow: hidden;
+
+      overflow: auto;
       position: relative;
     }
     .bottom-link {
@@ -192,6 +223,10 @@ main {
   }
   .box {
     box-shadow: $shadow-subtle;
+    transition: $transition-slow;
+  }
+  .box:hover {
+    transform: scale(1.05);
   }
   .box-1 {
     grid-area: box-1;
@@ -224,7 +259,7 @@ main {
   .box-3 {
     grid-area: box-3;
     .box-header {
-      background: url(media/team.png) no-repeat;
+      background: url(/media/team.png) no-repeat;
       background-size: cover;
     }
   }
@@ -240,6 +275,15 @@ main {
         padding: 8px 20px;
         border-radius: 4px;
         box-shadow: $shadow-subtle;
+      }
+      .btn {
+        font-weight: 900;
+        transition: $transition-subtle;
+      }
+      .btn:hover {
+        transform: scale(1.02);
+        color: $color-pop;
+        background-color: $color-white;
       }
       h1 {
         font-size: $font-big;
@@ -304,7 +348,7 @@ main {
   .box-9 {
     grid-area: box-9;
     .box-header {
-      background: url(media/person.png) no-repeat;
+      background: url(/media/person.png) no-repeat;
       background-size: cover;
       background-position: center;
     }
