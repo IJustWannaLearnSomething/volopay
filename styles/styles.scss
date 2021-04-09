@@ -195,7 +195,7 @@ main {
     p {
       padding-bottom: $gap-med;
 
-      overflow: auto;
+      overflow: hidden;
       position: relative;
     }
     .bottom-link {
@@ -227,6 +227,9 @@ main {
   }
   .box:hover {
     transform: scale(1.05);
+    p {
+      overflow: auto;
+    }
   }
   .box-1 {
     grid-area: box-1;
@@ -259,7 +262,7 @@ main {
   .box-3 {
     grid-area: box-3;
     .box-header {
-      background: url(/media/team.png) no-repeat;
+      background: url(media/team.png) no-repeat;
       background-size: cover;
     }
   }
@@ -348,7 +351,7 @@ main {
   .box-9 {
     grid-area: box-9;
     .box-header {
-      background: url(/media/person.png) no-repeat;
+      background: url(media/person.png) no-repeat;
       background-size: cover;
       background-position: center;
     }

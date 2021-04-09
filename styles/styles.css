@@ -202,7 +202,7 @@ main .box-body h2 {
 
 main .box-body p {
   padding-bottom: 20px;
-  overflow: auto;
+  overflow: hidden;
   position: relative;
 }
 
@@ -253,6 +253,10 @@ main .box:hover {
           transform: scale(1.05);
 }
 
+main .box:hover p {
+  overflow: auto;
+}
+
 main .box-1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -297,7 +301,7 @@ main .box-3 {
 }
 
 main .box-3 .box-header {
-  background: url(/media/team.png) no-repeat;
+  background: url(media/team.png) no-repeat;
   background-size: cover;
 }
 
@@ -413,7 +417,7 @@ main .box-9 {
 }
 
 main .box-9 .box-header {
-  background: url(/media/person.png) no-repeat;
+  background: url(media/person.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
